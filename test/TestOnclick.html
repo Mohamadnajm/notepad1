@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="najem" id="test" onchange="handleChange()">
+    <button onclick="handleClick()">click</button>
+    <h3 class="h3">ui</h3>
+    <h3 class="h3">uiuhi</h3>
+    <h3 class="h3">ui</h3>
+    <h3 class="h3">ui</h3>
+    <h3 class="h3">ui</h3>
+
+</body>
+    <script>
+        const colors = ["red", "green","purple","grey","yellow"]
+        
+
+        const handleClick = () => {
+        
+            let array = document.getElementsByClassName("h3")
+            for(let i=0; i<=array.length; i++){
+                for (let k = 0; k < array.length; k++) {
+                    array[k].style.color = colors[k]
+                    
+                }
+                // console.log(array[i])
+                // array[i].innerHTML=text
+            }
+
+
+            console.log(array)
+        }
+        const handleChange = () => {
+            const value = document.getElementById("test").value
+            text = value
+        }
+    </script>
+</html>
